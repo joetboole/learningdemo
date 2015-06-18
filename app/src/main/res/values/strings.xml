@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DemoList</string>
+
+    <string name="label_tv">TextView</string>
+    <string name="action_settings">Settings</string>
+</resources>
