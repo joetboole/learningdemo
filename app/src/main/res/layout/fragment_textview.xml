@@ -2,10 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
     <TextView
+        android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:drawableLeft="@drawable/rotation_loading"
+        android:drawableBottom="@drawable/animation_arrow"
         android:text="Animation"/>
-
+    <!--android:drawableTop="@drawable/face"-->
 </RelativeLayout>

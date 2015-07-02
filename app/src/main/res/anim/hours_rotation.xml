@@ -1,0 +1,8 @@
+<objectAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="6000"
+    android:propertyName="pathData"
+    android:valueFrom="M20,30 H30 40 50 60"
+    android:valueTo="M-20,60 H30 40 50 60"
+    android:valueType="pathType"
+    android:interpolator="@android:anim/linear_interpolator"/>

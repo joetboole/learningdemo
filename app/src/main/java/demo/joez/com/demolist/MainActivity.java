@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import demo.joez.com.item.BaseFragment;
+import demo.joez.com.item.TextViewFragment;
+import demo.joez.com.item.TransitionsFragment;
+
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener,FragmentInteractionListener{
 
@@ -15,25 +19,27 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initView();
+//        navigateToTextViewFragment();
+        navigateToTransitionsFragment();
     }
 
-    private void initView(){
-        Button btnTextView= (Button) findViewById(R.id.btn_textview);
-        btnTextView.setOnClickListener(this);
-    }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.btn_textview:
 
-                break;
-        }
+    }
+
+    public void addFragment(BaseFragment fragment){
+        getSupportFragmentManager().beginTransaction().add(R.id.container,fragment).commit();
     }
 
     @Override
     public void navigateToTextViewFragment() {
+       addFragment(new TextViewFragment());
+    }
 
+    @Override
+    public void navigateToTransitionsFragment() {
+        addFragment(new TransitionsFragment());
     }
 }
