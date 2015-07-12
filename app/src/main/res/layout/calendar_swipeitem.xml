@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="#eee"
+        android:orientation="horizontal"
+        android:tag="back" >
+		<View 
+		    android:layout_width="0dp"
+		    android:layout_height="1dp"
+		    android:layout_weight="1"/>
+		<LinearLayout 
+		    android:id="@+id/back_operationview"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="right"
+		    android:orientation="horizontal"
+		    >
+	        <Button
+	            android:id="@+id/back_edit"
+	            android:layout_width="80dp"
+	            android:layout_height="70dp"
+	            android:layout_gravity="center"
+	            android:background="#808080"
+	            android:textColor="@color/white"
+	            android:text="Edit" />
+	
+	        <Button
+	            android:id="@+id/back_delete"
+	            android:layout_width="80dp"
+	            android:layout_height="70dp"
+	            android:layout_gravity="center"
+	            android:background="#FF0000"
+	            android:textColor="@color/white"
+	            android:text="Delete" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <demo.joez.com.widget.SwipeView
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:tag="front" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="5dp"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/cb_calendar_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/deals_checkbox_selector"
+                    android:button="@null" />
+                <TextView
+                    android:id="@+id/tv_calendar_diary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/calendar_dairy"
+                    android:text="@string/calendar_diarytxt"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_front_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:maxLines="2"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/more_view_text_link"
+                android:textSize="18sp"
+                android:text="content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/my_account_point" />
+        </LinearLayout>
+    </demo.joez.com.widget.SwipeView>
+
+</FrameLayout>

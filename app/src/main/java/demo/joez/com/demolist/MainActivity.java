@@ -11,6 +11,7 @@ import android.widget.TextView;
 import demo.joez.com.item.BaseFragment;
 import demo.joez.com.item.TextViewFragment;
 import demo.joez.com.item.TransitionsFragment;
+import demo.joez.com.item.ViewDragerFragment;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener,FragmentInteractionListener{
@@ -20,7 +21,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 //        navigateToTextViewFragment();
-        navigateToTransitionsFragment();
+//        navigateToTransitionsFragment();
+        navigateToDragerListFragment();
     }
 
 
@@ -41,5 +43,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     @Override
     public void navigateToTransitionsFragment() {
         addFragment(new TransitionsFragment());
+    }
+
+    @Override
+    public void navigateToDragerListFragment() {
+        addFragment(new ViewDragerFragment());
     }
 }

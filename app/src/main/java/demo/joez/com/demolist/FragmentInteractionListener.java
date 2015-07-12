@@ -6,4 +6,5 @@ package demo.joez.com.demolist;
 public interface FragmentInteractionListener {
     public void navigateToTextViewFragment();
     public void navigateToTransitionsFragment();
+    public void navigateToDragerListFragment();
 }

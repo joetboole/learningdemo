@@ -41,11 +41,11 @@ public class TransitionsFragment extends  BaseFragment {
                     scene = mSceneFirst;
                 }
 //                Transition fadeTransition = new Fade();
-//                Transition fadeTransition = TransitionInflater.from(getActivity()).inflateTransition(R.transition.fade_transition);
-                TransitionSet set = new TransitionSet().addTransition(new Fade());
+                Transition fadeTransition = TransitionInflater.from(getActivity()).inflateTransition(R.transition.fade_transition);
+//                TransitionSet set = new TransitionSet().addTransition(new Fade());
 //                TransitionSet set = (TransitionSet) TransitionInflater.from(getActivity()).inflateTransition(R.transition.set_transition);
-                TransitionManager.go(scene,set);
-                TransitionManager m=null;;
+                TransitionManager.go(scene,fadeTransition);
+                TransitionManager m=null;
                 mIsSecond=!mIsSecond;
             }
         });
