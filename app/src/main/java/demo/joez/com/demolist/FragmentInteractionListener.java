@@ -7,4 +7,5 @@ public interface FragmentInteractionListener {
     public void navigateToTextViewFragment();
     public void navigateToTransitionsFragment();
     public void navigateToDragerListFragment();
+    public void navigateToDesignSupportFragment();
 }
