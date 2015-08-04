@@ -13,6 +13,7 @@ import demo.joez.com.item.BaseFragment;
 import demo.joez.com.item.TextViewFragment;
 import demo.joez.com.item.TransitionsFragment;
 import demo.joez.com.item.ViewDragerFragment;
+import demo.joez.floatlist.FloatListViewFragment;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener,FragmentInteractionListener{
@@ -24,7 +25,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 //        navigateToTextViewFragment();
 //        navigateToTransitionsFragment();
 //        navigateToDragerListFragment();
-        navigateToDesignSupportFragment();
+//        navigateToDesignSupportFragment();
+        navigateToFloatListFragment();
     }
 
 
@@ -55,5 +57,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     @Override
     public void navigateToDesignSupportFragment() {
         addFragment(new DesignSuportFragment());
+    }
+    public void navigateToFloatListFragment() {
+        addFragment(new FloatListViewFragment());
     }
 }

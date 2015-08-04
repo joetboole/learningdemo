@@ -1,1 +1,10 @@
-/build
+bin/
+gen/
+.gradle/
+.classpath
+.project
+build
+local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/dictionaries
