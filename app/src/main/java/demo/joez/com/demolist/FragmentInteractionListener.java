@@ -9,4 +9,5 @@ public interface FragmentInteractionListener {
     public void navigateToDragerListFragment();
     public void navigateToDesignSupportFragment();
     public void navigateToFloatListFragment();
+    void navigateToPathViewFragment();
 }
