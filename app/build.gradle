@@ -3,9 +3,23 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 21
     buildToolsVersion "22.0.0"
+    productFlavors{
+
+    }
+
+    productFlavors{
+        develop{
+            manifestPlaceholders = [CHANNEL_NAME: "360apk"]
+            applicationId "demo.joez.com.demolist.develop"
+        }
+
+        github{
+            manifestPlaceholders = [CHANNEL_NAME: "githubapk"]
+            applicationId "demo.joez.com.demolist.github"
+        }
+    }
 
     defaultConfig {
-        applicationId "demo.joez.com.demolist"
         minSdkVersion 21
         targetSdkVersion 21
         versionCode 1
