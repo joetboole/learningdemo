@@ -13,6 +13,7 @@ import demo.joez.com.item.BaseFragment;
 import demo.joez.com.item.TextViewFragment;
 import demo.joez.com.item.TransitionsFragment;
 import demo.joez.com.item.ViewDragerFragment;
+import demo.joez.com.test.DatePickerFragment;
 import demo.joez.com.test.PathViewFragment;
 import demo.joez.floatlist.FloatListViewFragment;
 
@@ -28,7 +29,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 //        navigateToDragerListFragment();
 //        navigateToDesignSupportFragment();
 //        navigateToFloatListFragment();
-        navigateToPathViewFragment();
+//        navigateToPathViewFragment();
+        navigateToDatePickerFragment();
     }
 
 
@@ -68,4 +70,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     public void navigateToPathViewFragment() {
         addFragment(new PathViewFragment());
     }
+
+    @Override
+    public void navigateToDatePickerFragment() {
+        addFragment(new DatePickerFragment());
+    }
+
+
 }
